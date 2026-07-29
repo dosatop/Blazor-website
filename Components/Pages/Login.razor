@@ -1,71 +1,134 @@
 @page "/login"
 
 @rendermode InteractiveServer
+
 @using UserManagementBlazor.Dtos
 @using UserManagementBlazor.Services
 
 @inject AuthService AuthService
 @inject NavigationManager NavigationManager
 
-<h3>Login</h3>
+<div class=" d-flex justify-content-center align-items-center">
 
-<div class="row">
-    <div class="col-md-4">
+    <div class="login-card">
+
+        <h2 class="text-center mb-4">
+            Welcome Back
+        </h2>
+
+        <p class="text-center text-muted mb-4">
+            Sign in to your account
+        </p>
+
 
         <EditForm FormName="loginForm" Model="loginRequest" OnValidSubmit="HandleLogin">
+
             <DataAnnotationsValidator />
+            @* <ValidationSummary /> *@
 
             <div class="mb-3">
-                <label class="form-label">Email</label>
-                <InputText class="form-control" @bind-Value="loginRequest.Email" />
+                <label class="form-label">
+                    Email
+                </label>
+
+                <InputText class="form-control"
+                           placeholder="Enter your email"
+                           @bind-Value="loginRequest.Email" />
+                            <ValidationMessage For="@(() => loginRequest.Email)" />
             </div>
 
+
             <div class="mb-3">
-                <label class="form-label">Password</label>
+                <label class="form-label">
+                    Password
+                </label>
+
                 <InputText class="form-control"
                            type="password"
+                           placeholder="Enter your password"
                            @bind-Value="loginRequest.Password" />
+                            <ValidationMessage For="@(() => loginRequest.Password)" />
             </div>
 
-            <button class="btn btn-primary" type="submit">
-                Login
-            </button>
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger">
+                    @errorMessage
+                </div>
+            }
+
+
+       <button class="btn btn-primary w-100" disabled="@isLoading">
+
+    @if (isLoading)
+    {
+        <span class="spinner-border spinner-border-sm me-2"></span>
+        <span>Logging in...</span>
+    }
+    else
+    {
+        <span>Login</span>
+    }
+
+</button>
+
 
         </EditForm>
 
-        @if (!string.IsNullOrEmpty(errorMessage))
-        {
-            <div class="alert alert-danger mt-3">
-                @errorMessage
-            </div>
-        }
+
+        <div class="text-center mt-3">
+            <span>
+                Don't have an account?
+            </span>
+
+            <a href="/register">
+                Register
+            </a>
+        </div>
 
     </div>
+
 </div>
 
 @code {
+
     private LoginRequest loginRequest = new();
 
     private string? errorMessage;
+    private bool isLoading = false;
 
-   private async Task HandleLogin()
-{
-    errorMessage = null;
 
-    try
+    private bool IsFormValid =>
+        !string.IsNullOrWhiteSpace(loginRequest.Email) &&
+        !string.IsNullOrWhiteSpace(loginRequest.Password);
+
+
+    private async Task HandleLogin()
     {
-        var result = await AuthService.Login(loginRequest);
+        errorMessage = null;
 
-        Console.WriteLine($"Result null: {result == null}");
+        if (!IsFormValid)
+            return;
 
-        if (result != null)
+        try
         {
-           NavigationManager.NavigateTo("/weather");
+            isLoading = true;
+
+            var result = await AuthService.Login(loginRequest);
+
+            if (result != null)
+            {
+                NavigationManager.NavigateTo("/weather");
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            isLoading = false;
         }
     }
-    catch (Exception ex)
-    {
-        errorMessage = ex.Message;
-    }
-}
 }

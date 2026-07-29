@@ -60,7 +60,13 @@ namespace UserManagementBlazor.Services
 
             if (!response.IsSuccessStatusCode)
             {
-                throw new Exception(responseText);
+                var errorResponse = await response.Content
+                    .ReadFromJsonAsync<ApiErrorResponse>();
+
+                var message = errorResponse?.Errors.FirstOrDefault()
+                              ?? "Login failed";
+
+                throw new Exception(message);
             }
 
             var loginResponse =

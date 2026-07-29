@@ -58,3 +58,18 @@ h1:focus {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0f2fe;
+}
+
+.login-card {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+}

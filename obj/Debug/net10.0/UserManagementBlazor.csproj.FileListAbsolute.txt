@@ -26,7 +26,6 @@ C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\scopedc
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\scopedcss\bundle\UserManagementBlazor.styles.css
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\scopedcss\projectbundle\UserManagementBlazor.bundle.scp.css
-C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\glqndclvbz-{0}-khy4lop6wu-khy4lop6wu.gz
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\a46js5jvca-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\kjmtu7bolc-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\80flutazrb-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -74,8 +73,6 @@ C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compres
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\wqbz89fvpu-{0}-abdmv1u4y3-abdmv1u4y3.gz
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\1ang67vsy8-{0}-b9228eflpl-b9228eflpl.gz
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\m9azx95s4t-{0}-2tj1sjhksk-2tj1sjhksk.gz
-C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\xoqscumwom-{0}-5dxevxcnjn-5dxevxcnjn.gz
-C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\8ffyyup1zn-{0}-5dxevxcnjn-5dxevxcnjn.gz
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\staticwebassets.development.json
@@ -87,3 +84,7 @@ C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\refint\
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\UserManagementBlazor.pdb
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\UserManagementBlazor.genruntimeconfig.cache
 C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\ref\UserManagementBlazor.dll
+C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\UserManagementBlazor.sourcelink.json
+C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\xoqscumwom-{0}-xomf9dnjbj-xomf9dnjbj.gz
+C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\8ffyyup1zn-{0}-xomf9dnjbj-xomf9dnjbj.gz
+C:\Users\adenu\Desktop\joo\dotnet\UserManagementBlazor\obj\Debug\net10.0\compressed\glqndclvbz-{0}-y9zycvjdbv-y9zycvjdbv.gz

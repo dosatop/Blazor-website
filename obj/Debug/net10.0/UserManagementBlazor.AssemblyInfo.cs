@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("3e862ee4-0f89-4bff-b3aa-adf1b7c5b060")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserManagementBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+457e0743dd0a82a556279e5d02591eb29b9f6b97")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserManagementBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserManagementBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
