@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "EuLdm9FA4NA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adenu\\Desktop\\joo\\dotnet\\UserManagementBlazor\\UserManagementBlazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adenu\\.nuget\\packages\\blazor.localstorage\\10.1.0\\blazor.localstorage.10.1.0.nupkg.sha512",
+    "C:\\Users\\adenu\\.nuget\\packages\\blazor.serialization\\10.1.0\\blazor.serialization.10.1.0.nupkg.sha512",
+    "C:\\Users\\adenu\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.5\\microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

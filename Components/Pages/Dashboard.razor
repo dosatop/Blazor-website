@@ -1,0 +1,40 @@
+@page "/dashboard"
+@* @attribute [Authorize] *@
+
+<PageTitle>Dashboard</PageTitle>
+
+<h1>Dashboard</h1>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+            <h5>Total Users</h5>
+            <h2>@TotalUsers</h2>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+            <h5>Active Users</h5>
+            <h2>@ActiveUsers</h2>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+            <h5>Roles</h5>
+            <h2>@TotalRoles</h2>
+        </div>
+    </div>
+
+</div>
+
+
+@code {
+
+    private int TotalUsers = 0;
+    private int ActiveUsers = 0;
+    private int TotalRoles = 0;
+
+}

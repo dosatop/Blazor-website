@@ -1,0 +1,20 @@
+@page "/auth-test"
+
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject AuthenticationStateProvider AuthStateProvider
+
+<h1>Authentication Test</h1>
+
+<p>User: @username</p>
+
+@code {
+    private string username = "Unknown";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var state = await AuthStateProvider.GetAuthenticationStateAsync();
+
+        username = state.User.Identity?.Name ?? "Not logged in";
+    }
+}

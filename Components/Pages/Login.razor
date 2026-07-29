@@ -1,0 +1,71 @@
+@page "/login"
+
+@rendermode InteractiveServer
+@using UserManagementBlazor.Dtos
+@using UserManagementBlazor.Services
+
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+
+<h3>Login</h3>
+
+<div class="row">
+    <div class="col-md-4">
+
+        <EditForm FormName="loginForm" Model="loginRequest" OnValidSubmit="HandleLogin">
+            <DataAnnotationsValidator />
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <InputText class="form-control" @bind-Value="loginRequest.Email" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <InputText class="form-control"
+                           type="password"
+                           @bind-Value="loginRequest.Password" />
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+                Login
+            </button>
+
+        </EditForm>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger mt-3">
+                @errorMessage
+            </div>
+        }
+
+    </div>
+</div>
+
+@code {
+    private LoginRequest loginRequest = new();
+
+    private string? errorMessage;
+
+   private async Task HandleLogin()
+{
+    errorMessage = null;
+
+    try
+    {
+        var result = await AuthService.Login(loginRequest);
+
+        Console.WriteLine($"Result null: {result == null}");
+
+        if (result != null)
+        {
+           NavigationManager.NavigateTo("/weather");
+        }
+    }
+    catch (Exception ex)
+    {
+        errorMessage = ex.Message;
+    }
+}
+}

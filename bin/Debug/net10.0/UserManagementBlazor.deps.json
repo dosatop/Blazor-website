@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "UserManagementBlazor/1.0.0": {
+        "dependencies": {
+          "Blazor.LocalStorage": "10.1.0"
+        },
+        "runtime": {
+          "UserManagementBlazor.dll": {}
+        }
+      },
+      "Blazor.LocalStorage/10.1.0": {
+        "dependencies": {
+          "Blazor.Serialization": "10.1.0"
+        },
+        "runtime": {
+          "lib/net10.0/Blazor.LocalStorage.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.0.0"
+          }
+        }
+      },
+      "Blazor.Serialization/10.1.0": {
+        "runtime": {
+          "lib/net10.0/Blazor.Serialization.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UserManagementBlazor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blazor.LocalStorage/10.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zNMd04IHqr58kgcO59u8Wg5WzQ2FWXb8HMwXNdotKcWRkwdFk9reHxVYwEM+oy/pR84JGOnQHntsAjf5CRiptA==",
+      "path": "blazor.localstorage/10.1.0",
+      "hashPath": "blazor.localstorage.10.1.0.nupkg.sha512"
+    },
+    "Blazor.Serialization/10.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9WrypLtmJ1QMBFZAsQzXQrIcpXT2HvLkt3IGeYi0HHUYT3FvhBbTigbNe2tVdhYWxsfuvg4MW+B+rfdFPanBtQ==",
+      "path": "blazor.serialization/10.1.0",
+      "hashPath": "blazor.serialization.10.1.0.nupkg.sha512"
+    }
+  }
+}
